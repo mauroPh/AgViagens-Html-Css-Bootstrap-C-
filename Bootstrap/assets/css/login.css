@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     animation: gradient 3s ease alternate infinite;
+     background: linear-gradient(-45deg, #2222, #001489, #002560, #bfd8ff);
+     background-size: 300% 300%;
+     font-family: "Open Sans",  sans-serif;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: white;
+     height: 100vh;
+     font-size: 300%;
+
+}
+
+
+@keyframes gradient {
+    from {
+        background-position: 0 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.100);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    max-width: 500px;
+    width: 50%;
+    padding: 50px 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+}
+form h2 {
+    text-align: center;
+    margin-top: 40px;
+    color: transparent;
+    font-family: "Open Sans",  sans-serif;
+    font-size: larger;
+    background-color: #ffffff;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+form input[type=email],
+form input[type=password] {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin: 10px 0;
+    border-radius: 25px;
+    outline: 0;
+}
+
+form input[type=submit],
+.button-email {
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background: #bfd8ff;
+    color: #000;
+    border: 0;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+form input[type=submit]:hover {
+    background-color: #001489;
+}
+
+.button-email:hover {
+    background-color: #001489;
+}
+
+form a,
+p {
+    color: #ffffff;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 0.4rem;
+    margin-bottom: 35px;
+}
+
+.p {
+    color: #ffffff;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+
+.hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #CCC, transparent);
+}
+
+.botoes {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    color: #000;
+    width: 100%;
+    height: 40px;
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 20px;
+    opacity: 1;
+}
+
+.botoes:hover {
+    opacity: 0.8
+}
+
+.button-google {
+    background-image: url('/assets/img/google.png');
+    background-repeat: no-repeat;
+    background-position: 4%;
+}
+
+.button-facebook {
+    background-image: url('/assets/img/facebook.png');
+    background-repeat: no-repeat;
+    background-position: 4%;
+
+}
