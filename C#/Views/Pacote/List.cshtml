@@ -1,0 +1,19 @@
+﻿@model IEnumerable<AgenciaDeViagens.Models.Pacote>
+
+<div>
+    <h2>Promoções</h2>
+</div>
+
+
+<div class="container">
+<div class="row">
+@foreach(var pacote in Model)
+{  <div class="col-sm-3 col-md-3 col-lg-3">
+      
+      <h3>Preço : @pacote.Preco.ToString("c")</h3>
+      <h4>@pacote.PacoteNome</h4>
+      <p>@pacote.DescricaoCurta</p>
+ </div>
+     }
+ </div>
+ </div>
